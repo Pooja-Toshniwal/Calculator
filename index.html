@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="output" readonly></textarea>
+        <br>
+        <button value="AC" onclick="cleardisplay()">AC</button>
+        <button value="+/-" onclick="changesign()">+/-</button>
+        <button value="%" onclick="operation(modulo)">%</button>
+        <button value="/" onclick="operation(divide)">/</button><br>
+        <button value="7" onclick="getNumber('7')">7</button>
+        <button value="8" onclick="getNumber('8')">8</button>
+        <button value="9" onclick="getNumber('9')">9</button>
+        <button value="*" onclick="operation(multiply)">*</button><br>
+        <button value="4" onclick="getNumber('4')">4</button>
+        <button value="5" onclick="getNumber('5')">5</button>
+        <button value="6" onclick="getNumber('6')">6</button>
+        <button value="-" onclick="operation(subtract)">-</button><br>
+        <button value="1" onclick="getNumber('1')">1</button>
+        <button value="2" onclick="getNumber('2')">2</button>
+        <button value="3" onclick="getNumber('3')">3</button>
+        <button value="+" onclick="operation(add)">+</button><br>
+        <button value="0" onclick="getNumber(0)">0</button>
+        <button value="." onclick="getNumber('.')">.</button>
+        <button value="=" onclick="equals()">=</button>
+    </div>
+    <script src="script.js"></script> 
+</body>
+
+</html>
